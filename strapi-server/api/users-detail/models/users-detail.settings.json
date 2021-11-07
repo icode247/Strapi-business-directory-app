@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_details",
+  "info": {
+    "name": "Users_detail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "businesses": {
+      "collection": "business"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}
