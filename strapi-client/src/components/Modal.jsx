@@ -20,8 +20,8 @@ const Modal = (props) => {
       postal_code: code,
       isApproved: false,
     };
-    const res = await axios.post("http://localhost:1337/businesses", reqBody);
-    console.log(res);
+    await axios.post("http://localhost:1337/businesses", reqBody);
+    props.setShowModal(false)
   };
   return (
     <div className="modal">

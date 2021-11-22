@@ -35,11 +35,11 @@ function BusinessDetails(props) {
   return (
     <section className={"container"}>
       <div className={"details"}>
-        <h4>{businessDetail[0].name}</h4>
+        <h4>{businessDetail[0]?.name}</h4>
         <div className={"location"}>
-          <p>Call:{businessDetail[0].phone}</p>
-          <p>City: {businessDetail[0].city}</p>
-          <p>Street: {businessDetail[0].street}</p>
+          <p>Call:{businessDetail[0]?.phone}</p>
+          <p>City: {businessDetail[0]?.city}</p>
+          <p>Street: {businessDetail[0]?.street}</p>
         </div>
       </div>
       <div className={"comments"}>

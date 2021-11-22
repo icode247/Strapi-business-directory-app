@@ -45,7 +45,7 @@ function SignUp(props) {
             name="Email"
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
             name="Password"
